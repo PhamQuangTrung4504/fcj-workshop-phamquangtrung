@@ -6,55 +6,36 @@ chapter: false
 pre: " <b> 1.11. </b> "
 url: "/vi/1-worklog/1.11-week11/"
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Chủ đề tuần
 
-### Mục tiêu tuần 11:
+Hoàn thiện sản phẩm Money Manager, tối ưu hóa giao diện UI/UX, thiết lập giám sát (monitoring) và chuẩn bị nộp bài báo cáo
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Tối ưu hóa UI/UX cho cả Web và Mobile, chạy kiểm thử E2E (End-to-End).
+* Thiết lập hệ thống giám sát, chuẩn bị tài liệu kỹ thuật và chạy thử nghiệm demo để nộp bài.
 
+### Lịch làm việc
 
-### Kết quả đạt được tuần 11:
+| Ngày | Thứ | Mô tả công việc | Lab / Dự án |
+| :--- | :--- | :--- | :--- |
+| 29/06/2026 | Thứ 2 | Đánh giá và tối ưu hóa UI/UX trên phiên bản React JS + Vite (Web) và React Native Expo (Mobile). Kiểm thử giao diện phản hồi (responsive) và đa nền tảng cho cả web và mobile. Chạy kiểm thử E2E cho các tính năng cốt lõi: đăng ký/đăng nhập, quản lý thu nhập/chi tiêu, chat AI Nova Money. | [Dự án cuối khóa](#) |
+| 30/06/2026 | Thứ 3 | Hoàn thiện tài liệu triển khai hệ thống và hướng dẫn cài đặt cho Money Manager. Cấu hình Amazon CloudWatch: Logs, Metrics, Alarms cho ALB, EC2, RDS, Lambda, SQS. Chuẩn bị các script rollback và xác minh tính Sẵn sàng cao (High Availability) trên 2 Availability Zones. | [Dự án cuối khóa](#) |
+| 01/07/2026 | Thứ 4 | Chuẩn bị nội dung trình bày slide và kịch bản demo cho Money Manager. Thực hành thuyết trình demo tính năng: quản lý thu nhập/chi tiêu, dự báo tài chính, trợ lý ảo Nova Money, quét hóa đơn bằng OCR. Hoàn thành tệp README và tài liệu dự án. | [Dự án cuối khóa](#) |
+| 02/07/2026 | Thứ 5 | Kiểm tra tính năng lần cuối, đánh giá lại toàn bộ mã nguồn của Spring Boot backend và React frontend. Viết báo cáo chi tiết về kiến trúc: VPC multi-AZ, luồng đi của dữ liệu từ ALB -> EC2 -> RDS/ElastiCache/DynamoDB. Tạo kho lưu trữ (repository) cuối cùng và cập nhật mã nguồn lên. | [Dự án cuối khóa](#) |
+| 03/07/2026 | Thứ 6 | Xác minh luồng bất đồng bộ: SQS -> EC2 Worker -> Lambda (Xuất báo cáo/Hóa đơn) -> S3. Xác minh luồng thông báo: Amazon SNS gửi email cảnh báo khi ngân sách vượt hạn mức hoặc gói đăng ký sắp hết hạn. Sao lưu dữ liệu RDS MySQL, tạo snapshot cho môi trường và gửi liên kết repository cho giảng viên hướng dẫn. | [Dự án cuối khóa](#) |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả mong đợi
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Giao diện UI/UX được tối ưu hoàn thiện, vượt qua các bài kiểm thử E2E cho các tính năng cốt lõi.
+* Hệ thống giám sát CloudWatch hoạt động ổn định, sẵn sàng các script rollback.
+* Chuẩn bị đầy đủ tài liệu, slide thuyết trình và video/kịch bản demo.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Tài liệu tham khảo Tuần 11
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* [Dự án cuối khóa - Money Manager (Spring Boot + React JS + React Native Expo)](#)
+* Các dịch vụ AWS: CloudWatch, SNS, SQS, Lambda, S3, RDS MySQL backup/snapshot
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 
