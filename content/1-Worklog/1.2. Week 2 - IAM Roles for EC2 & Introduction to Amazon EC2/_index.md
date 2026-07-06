@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1.2. </b> "
 url: "/1-worklog/1.2-week2/"
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 2 Objectives:

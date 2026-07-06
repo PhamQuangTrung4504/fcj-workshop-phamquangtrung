@@ -6,53 +6,36 @@ chapter: false
 pre: " <b> 1.1. </b> "
 url: "/1-worklog/1.1-week1/"
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Weekly Topic
 
-### Week 1 Objectives:
+AWS account setup + foundational IAM knowledge + Amazon VPC basics
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Weekly Goals
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Get familiar with the First Cloud AI Journey internship program and team members.
+* Set up the AWS environment and master foundational AWS services (IAM & VPC).
 
+### Work Schedule
 
-### Week 1 Achievements:
+| Date | Day | Task Description | Lab / Project |
+| :--- | :--- | :--- | :--- |
+| 20/04/2026 | Mon | Read the entire 3-month learning roadmap. Install AWS CLI and configure the working environment. Create an AWS account if not yet done and enable MFA for the root account. | [Lab 000001 - Create your first AWS account](https://000001.awsstudygroup.com/) |
+| 21/04/2026 | Tue | Learn core IAM concepts including User, Group, and Policy. Create an Admin Group and Admin User. Understand the Least Privilege principle and apply it in practice. | [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/) |
+| 22/04/2026 | Wed | Distinguish IAM Role vs IAM User in different use cases. Create an Admin Role and OperatorUser. Practice the Switch Role process on the AWS console. | [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/) |
+| 23/04/2026 | Thu | Learn Amazon VPC fundamentals including public/private subnet, route table, Internet Gateway, and NAT Gateway. Compare Security Group vs Network ACL. | [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/) |
+| 24/04/2026 | Fri | Deploy EC2 into VPC and test connectivity. Configure NAT Gateway and Reachability Analyzer. Use Session Manager for SSH-free access and set up CloudWatch monitoring on EC2. | [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/) |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Expected Results
 
-* Successfully created and configured an AWS Free Tier account.
+* Set up and secure an AWS account with MFA enabled for the root account.
+* Understand how to use AWS Free Tier and basic cost control principles.
+* Build a solid IAM foundation with users, groups, policies, roles, and the Switch Role process.
+* Create a complete Amazon VPC with public/private subnets, internet access, routing, and security controls.
+* Deploy EC2 within VPC, monitor with CloudWatch, and practice proper resource cleanup.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+### Week 1 References
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* [Lab 000001 - Create your first AWS account](https://000001.awsstudygroup.com/)
+* [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/)
+* [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/)

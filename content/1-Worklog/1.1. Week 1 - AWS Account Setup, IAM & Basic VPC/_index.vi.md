@@ -6,55 +6,38 @@ chapter: false
 pre: " <b> 1.1. </b> "
 url: "/vi/1-worklog/1.1-week1/"
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Chủ đề tuần
 
-### Mục tiêu tuần 1:
+Thiết lập tài khoản AWS + kiến thức cơ bản về IAM + kiến thức cơ bản về Amazon VPC
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Làm quen với chương trình thực tập First Cloud AI Journey và các thành viên trong nhóm.
+* Thiết lập môi trường AWS và làm chủ các dịch vụ AWS cơ bản (IAM & VPC).
 
+### Lịch làm việc
 
-### Kết quả đạt được tuần 1:
+| Ngày | Thứ | Mô tả công việc | Lab / Dự án |
+| :--- | :--- | :--- | :--- |
+| 20/04/2026 | Thứ 2 | Đọc toàn bộ lộ trình học tập 3 tháng. Cài đặt AWS CLI và cấu hình môi trường làm việc. Tạo tài khoản AWS nếu chưa có và kích hoạt MFA cho tài khoản root. | [Lab 000001 - Create your first AWS account](https://000001.awsstudygroup.com/vi/) |
+| 21/04/2026 | Thứ 3 | Tìm hiểu các khái niệm cốt lõi của IAM bao gồm User, Group và Policy. Tạo Admin Group và Admin User. Hiểu nguyên lý Quyền tối thiểu (Least Privilege) và áp dụng vào thực tế. | [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/vi/) |
+| 22/04/2026 | Thứ 4 | Phân biệt IAM Role và IAM User trong các tình huống sử dụng khác nhau. Tạo Admin Role và OperatorUser. Thực hành quy trình chuyển đổi vai trò (Switch Role) trên console AWS. | [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/vi/) |
+| 23/04/2026 | Thứ 5 | Tìm hiểu các khái niệm cơ bản về Amazon VPC bao gồm public/private subnet, route table, Internet Gateway và NAT Gateway. So sánh Security Group và Network ACL. | [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/vi/) |
+| 24/04/2026 | Thứ 6 | Triển khai EC2 vào VPC và kiểm tra kết nối. Cấu hình NAT Gateway và Reachability Analyzer. Sử dụng Session Manager để truy cập không cần SSH và thiết lập giám sát CloudWatch trên EC2. | [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/vi/) |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả mong đợi
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thiết lập và bảo mật tài khoản AWS với MFA được kích hoạt cho tài khoản root.
+* Hiểu cách sử dụng AWS Free Tier và các nguyên tắc kiểm soát chi phí cơ bản.
+* Xây dựng nền tảng IAM vững chắc với user, group, policy, role và quy trình Switch Role.
+* Tạo một Amazon VPC hoàn chỉnh với public/private subnet, truy cập internet, định tuyến và kiểm soát bảo mật.
+* Triển khai EC2 trong VPC, giám sát bằng CloudWatch và thực hành dọn dẹp tài nguyên đúng cách.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Tài liệu tham khảo Tuần 1
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* [Lab 000001 - Create your first AWS account](https://000001.awsstudygroup.com/vi/)
+* [Lab 000002 - Access management with AWS IAM](https://000002.awsstudygroup.com/vi/)
+* [Lab 000003 - Basic networking with Amazon VPC](https://000003.awsstudygroup.com/vi/)
 
 
