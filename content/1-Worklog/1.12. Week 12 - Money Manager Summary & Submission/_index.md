@@ -6,53 +6,34 @@ chapter: false
 pre: " <b> 1.12. </b> "
 url: "/1-worklog/1.12-week12/"
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Weekly Topic
 
-### Week 12 Objectives:
+Money Manager project summary - security hardening, cost optimization, recovery testing, and submission
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+### Weekly Goals
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Complete final activities: security, cost, recovery testing.
+* Submit report, presentation, and hand over the project.
 
+### Work Schedule
 
-### Week 12 Achievements:
+| Date | Day | Task Description | Lab / Project |
+| :--- | :--- | :--- | :--- |
+| 06/07/2026 | Mon | Support handling post-deploy issues and operational incidents. Verify third-party service integrations through NAT Gateway: PayOS, Brevo SMTP, Google Gemini API. Add open-source license if needed. | [Final Project](#) |
+| 07/07/2026 | Tue | Consolidate learned knowledge and draft a blog post about deploying Spring Boot on AWS. Security hardening: HTTPS via Cloudflare, data encryption, review IAM policies and Security Groups. Document issues encountered and their resolutions during deployment. | [Final Project](#) |
+| 08/07/2026 | Wed | Review AWS costs: RDS MySQL, ElastiCache Redis, EC2 ASG, Lambda, S3, NAT Gateway. Propose cost optimization strategies (Reserved Instances, Savings Plans). Update final report and architecture documentation. | [Final Project](#) |
+| 09/07/2026 | Thu | Test recovery and backup restore for RDS MySQL (multi-AZ failover). Verify ElastiCache Redis failover across 2 Availability Zones. Final comprehensive check, freeze code, and prepare submission package. | [Final Project](#) |
+| 10/07/2026 | Fri | Submit report and present Money Manager project - Personal Finance Management System on AWS. Summarize the AWS learning journey and project deployment experience. Self-assessment and lessons learned. | [Final Project](#) |
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Expected Results
 
-* Successfully created and configured an AWS Free Tier account.
+* Security hardened, costs reviewed with optimization plan.
+* Recovery/failover tests pass for RDS MySQL and ElastiCache Redis.
+* Submission complete: report, slides, demo, repository.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+### Week 12 References
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* [Final Project - Money Manager (Spring Boot + React JS + React Native Expo)](#)
+* Focus: cost review, backup/recovery, security hardening, final presentation
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
