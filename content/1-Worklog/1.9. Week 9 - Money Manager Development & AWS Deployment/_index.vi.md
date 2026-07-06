@@ -6,55 +6,36 @@ chapter: false
 pre: " <b> 1.9. </b> "
 url: "/vi/1-worklog/1.9-week9/"
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Chủ đề tuần
 
-### Mục tiêu tuần 9:
+Phát triển các tính năng cốt lõi của Money Manager và triển khai lên AWS theo kiến trúc đã thiết kế
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Phát triển các tính năng chính của Money Manager (backend + frontend).
+* Triển khai lên AWS theo kiến trúc multi-AZ đã thiết kế ở tuần 8.
 
+### Lịch làm việc
 
-### Kết quả đạt được tuần 9:
+| Ngày | Thứ | Mô tả công việc | Lab / Dự án |
+| :--- | :--- | :--- | :--- |
+| 15/06/2026 | Thứ 2 | Xem lại mã nguồn và ưu tiên thứ tự triển khai các module. Đảm bảo môi trường phát triển ổn định (Spring Boot backend, React frontend). Xem xét quy trình build & deploy trước khi bắt đầu phát triển tính năng mới. | [Dự án cuối khóa](#) |
+| 16/06/2026 | Thứ 3 | Phát triển các API nghiệp vụ cốt lõi: quản lý thu nhập/chi tiêu, ngân sách, hũ tiết kiệm. Kiểm tra entity mapping, mối quan hệ giữa các bảng và luồng truy xuất dữ liệu. Kiểm thử cục bộ để đảm bảo API hoạt động chính xác với MySQL. | [Dự án cuối khóa](#) |
+| 17/06/2026 | Thứ 4 | Hoàn thiện các tính năng xác thực: JWT token + Google OAuth2. Phát triển các API phân quyền người dùng (Free/Premium). Cập nhật tài liệu kỹ thuật và tài liệu API. | [Dự án cuối khóa](#) |
+| 18/06/2026 | Thứ 5 | Triển khai Spring Boot backend lên EC2 trong Private Subnet. Cấu hình ALB trong Public Subnet để điều tuyến lưu lượng đến EC2. Thiết lập Auto Scaling Group cho EC2 Web API để tự động mở rộng/thu hẹp dựa trên tải. | [Dự án cuối khóa](#) |
+| 19/06/2026 | Thứ 6 | Cấu hình RDS MySQL multi-AZ. Cấu hình ElastiCache Redis để lưu cache và quản lý session. Kiểm tra kết nối từ EC2. | [Dự án cuối khóa](#) |
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Kết quả mong đợi
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Các API nghiệp vụ cốt lõi đi vào hoạt động ổn định (quản lý thu nhập/chi tiêu, xác thực, phân quyền).
+* Backend được triển khai thành công lên EC2 với ALB + Auto Scaling Group.
+* Cấu hình và kết nối thành công RDS MySQL và ElastiCache Redis.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Tài liệu tham khảo Tuần 9
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* [Dự án cuối khóa - Money Manager (Spring Boot + React JS + React Native Expo)](#)
+* Các dịch vụ AWS: EC2 ASG, ALB, RDS MySQL, ElastiCache Redis
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 
