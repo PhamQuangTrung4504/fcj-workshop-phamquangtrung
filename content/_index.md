@@ -9,11 +9,11 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Phan Ngoc Huy
+&emsp; **Full Name:** Phạm Quang Trung
 
-&emsp; **Phone Number:** 0354599801 
+&emsp; **Phone Number:** 0326658276
 
-&emsp; **Email:** ngochuy12082003@gmail.com
+&emsp; **Email:** phamquangtrung4504@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology and Education
 
