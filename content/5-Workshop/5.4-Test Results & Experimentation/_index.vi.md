@@ -6,6 +6,14 @@ chapter : false
 pre : " <b> 5.4. </b> "
 ---
 ### Kết quả Thử nghiệm & Thực nghiệm
+
+#### Video Trải Nghiệm Ứng Dụng
+Video dưới đây trình bày toàn bộ luồng hoạt động của ứng dụng di động GymPro trên hạ tầng đám mây Serverless đã triển khai: quy trình đăng ký và xác thực tài khoản hội viên qua AWS Cognito User Pool, cơ chế đồng bộ dữ liệu thời gian thực với Firebase Firestore, phân hệ cấp quyền và tải ảnh đại diện/check-in thể hình bảo mật thông qua S3 Presigned URL ngắn hạn xử lý bởi hàm AWS Lambda ẩn trong mạng riêng Private Subnet, kết nối thông mạch tối ưu chi phí qua cổng phụ S3 Gateway VPC Endpoint, tích hợp trợ lý huấn luyện viên thông minh AI Chatbot bằng Google Gemini API, và hệ thống radar giám sát vận hành, tự động cảnh báo lỗi thời gian thực về Gmail thông qua Amazon CloudWatch Metric Filters & Amazon SNS.
+
+{{< youtube 2O4QUPTObm4 >}}
+
+---
+
 Sau khi hoàn tất cấu hình cơ sở hạ tầng, tác giả đã tiến hành thử nghiệm thực tế từ đầu đến cuối (end-to-end) để đánh giá tính ổn định và chính xác của toàn bộ giải pháp:
 
 #### Thử nghiệm Luồng Đăng ký / Xác thực (AWS Cognito)

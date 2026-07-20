@@ -6,6 +6,14 @@ chapter : false
 pre : " <b> 5.4. </b> "
 ---
 ### Testing & Experimental Results
+
+#### Application Demo Video
+The video below demonstrates the complete operational workflow of the GymPro mobile application deployed on an AWS Serverless architecture: the member registration and authentication process via AWS Cognito User Pool; the real-time data synchronization mechanism utilizing Firebase Firestore; the secure image upload subsystem handling member avatars and fitness check-ins through short-lived S3 Presigned URLs processed by an AWS Lambda function isolated within a Private Subnet; the optimized internal connection bypassing public internet costs via an S3 Gateway VPC Endpoint; the integration of an intelligent AI Chatbot personal trainer powered by the Google Gemini API; and finally, the automated operational monitoring radar providing real-time system error alerts sent directly to Gmail via Amazon CloudWatch Metric Filters and Amazon SNS.
+
+{{< youtube 2O4QUPTObm4 >}}
+
+---
+
 After completing the infrastructure configuration, the author conducted practical end-to-end testing to evaluate the stability and correctness of the entire solution:
 
 #### Testing the Registration / Authentication Flow (AWS Cognito)
